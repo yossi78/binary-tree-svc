@@ -14,7 +14,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping(value = "/v1/binay")
+@RequestMapping(value = "/v1/binary")
 public class BinaryController {
 
     private static final Logger logger = LoggerFactory.getLogger(BinaryController.class);
