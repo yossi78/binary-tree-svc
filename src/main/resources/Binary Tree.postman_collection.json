@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "6bd4a010-c527-4939-a64e-6de51d500241",
+		"name": "Binary Tree",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "513031"
+	},
+	"item": [
+		{
+			"name": "Add Node",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "sessionId",
+						"value": "{{sessionId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numbers\": [20,50,30,10,80,90,5]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:{{PORT}}/v1/binary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"v1",
+						"binary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tree",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sessionId",
+						"value": "{{sessionId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:{{PORT}}/v1/binary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"v1",
+						"binary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Tree",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "sessionId",
+						"value": "{{sessionId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:{{PORT}}/v1/binary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"v1",
+						"binary"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
